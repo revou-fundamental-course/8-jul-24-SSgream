@@ -1,0 +1,140 @@
+/* Style for the entire document */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Header styles */
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* Main content styles */
+main {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    height: calc(100vh - 100px); /* Full height minus header and footer */
+}
+
+.left-section, .right-section {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 48%;
+    overflow-y: auto;
+}
+
+/* Article styles */
+article p {
+    margin: 0 0 10px;
+}
+
+.left-section article:first-of-type {
+    margin-bottom: 20px;
+}
+
+
+/* Form styles */
+form p {
+    margin: 0;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+form label, form input {
+    display: block;
+}
+
+form input[type="radio"] {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+form button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.gender-selection {
+    display: flex;
+    align-items: center;
+}
+
+.gender-selection input[type="radio"] {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+/* Section styles */
+section h3 {
+    margin-top: 0;
+}
+
+section ol {
+    padding-left: 20px;
+}
+
+.fitur{
+    text-align: left;
+}
+
+/* Result styles */
+#BMi, #penjelasan, #penyakit {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #007bff;
+}
+
+#BMi {
+    margin-top: 10px;
+}
+
+button {
+    margin-top: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+/* Footer styles */
+footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    margin: 0;
+}

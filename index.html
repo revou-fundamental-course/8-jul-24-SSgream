@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator BMI</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Kalkulator BMI</h1>
+    </header>
+
+    <main>
+        <!-- Left Section -->
+        <div class="left-section">
+            <!-- Main Article -->
+            <article>
+                <p>Berat badan ideal adalah impian semua orang. Tidak hanya memiliki bentuk tubuh yang menunjang penampilan, berat badan ideal juga menandakan kondisi tubuh yang sehat. Bagaimana denganmu? Yuk, hitung sekarang di kalkulator BMI</p>
+            </article>
+
+            <!-- Form -->
+            <section>
+                <form>
+                    <p>Jenis Kelamin</p>
+                    <div class="gender-selection">
+                        <input type="radio" name="fav_language" id="laki-laki">
+                        <label for="laki-laki">Laki-laki</label>
+                        <input type="radio" name="fav_language" id="perempuan">
+                        <label for="perempuan">Perempuan</label>
+                    </div>
+
+                    <br>
+                    <label for="BB">Berat Badan (Kg)</label>
+                    <input type="number" id='BB'>
+                    <br>
+                    <label for="Usia">Usia (Tahun)</label>
+                    <input type="number" id="Usia">
+                    <br>
+                    <label for="Tinggi">Tinggi Badan (Cm)</label>
+                    <input type="number" id='Tinggi'>
+                    <br>
+
+                    <button type="button" onclick='calculateBMI()'>Hitung BMI</button>
+                    <button type="button" onclick="reload()">Reset</button>
+                </form>
+            </section>
+
+            <!-- Form Article -->
+            <article>
+                <header>
+                    <h3>Keunggulan Fitur</h3>
+                    <div class="fitur">
+                        <ol>
+                            <li>Menghitung berat badan</li>
+                            <li>Menentukan kategori berat badan ideal atau tidak</li>
+                            <li>Mempersiapkan program penurunan berat badan</li>
+                        </ol>
+                    </div>
+
+                    <p>Kalkulator ini hanya boleh digunakan oleh orang dewasa (wanita hamil atau menyusui tidak boleh mengandalkan pembacaan BMI ini) dan tidak ada tindakan yang harus diambil berdasarkan nilainya selain berkonsultasi dengan orang yang memenuhi syarat seperti dokter</p>
+
+                    <p>Kalkulator akan memberi Anda gambaran tentang perbandingan berat badan Anda dengan nilai umum. Indeks Massa Tubuh (atau BMI) dihitung sebagai berat badan Anda (dalam kilogram) dibagi dengan kuadrat tinggi badan Anda (dalam meter) atau BMI = Kg/M²</p>
+                </header>
+            </article>
+        </div>
+
+        <!-- Right Section -->
+        <div class="right-section">
+            <!-- Result Article -->
+            <article>
+                <header>
+                    <h1>Hasil</h1>
+                </header>
+
+                <!-- Result Section -->
+                <section>
+                    <p id="BMi"></p>
+                    <button>Download Hasil BMI</button>
+                </section>
+                
+                <!-- Result article -->
+                <article>
+                    <p id="penjelasan"></p>
+                    <button>Konsultasi Ahli Gizi Via Aplikasi</button>
+                    <button>Registrasi Online Ahli Gizi</button>
+                    <p>BMI tidak sepenuhnya mewakili diagnosis menyeluruh dari kesehatan tubuh dan risiko penyakit seseorang. Anda perlu konsultasi lebih lanjut mengenai risiko dan kekhawatiran Anda terkait dengan berat badan Anda.</p>
+                </article>
+                
+                <!-- General Information -->
+                <section>
+                    <p id="penyakit"></p>
+                    <button>Konsultasi Dokter Via Aplikasi</button>
+                    <button>Registrasi Online Sekarang</button>
+                </section>
+            </article>
+        </div>
+    </main>
+    <script src="js/script.js"></script>
+
+    <footer>
+        <p>Selwin Saputra . 2024</p>
+    </footer>
+</body>
+</html>
